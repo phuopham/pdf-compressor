@@ -60,7 +60,7 @@ export const Dropzone = () => {
                 </form>}
             {state === "loading" && <div className='text-center'>Please wait... It could take up to 30s to complete</div>}
             {state === "toBeDownloaded" &&
-                <div className='flex flex-col items-center w-full'>
+                <div className='flex flex-col gap-4 items-center w-full'>
                     <div className={"px-4 py-2 border-0 rounded-full font-semibold bg-emerald-50 text-emerald-700 hover:bg-emerald-100"}>
                         <a href={downloadLink} download={minFileName}>
                             {` Download ${minFileName}`}
