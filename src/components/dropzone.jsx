@@ -53,7 +53,7 @@ export const Dropzone = () => {
                     <div className='flex gap-3 items-center'>
                         <input className={state == 'selected' ? `px-4 py-2 border-0 rounded-full font-semibold bg-emerald-50 text-emerald-700 hover:bg-emerald-100` : 'px-4 py-2 border-0 rounded-full font-semibold bg-slate-100 text-slate-400'} type="submit"
                             disabled={state != 'selected'} value={state == "selected" ? "Compress the PDF" : "Import PDF to convert"} />
-                        <a className='text-red-700 rounded-full bg-red-200 px-1 py-1' href="./"><IoClose className='h-7 w-7' /></a>
+                        {state == "selected" && <a className='text-red-700 rounded-full bg-red-200 px-1 py-1' href="./"><IoClose className='h-7 w-7' /></a>}
                     </div>
 
 
